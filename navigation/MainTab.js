@@ -42,7 +42,7 @@ const config = Platform.select({
 const DefaultNavigationOptions = {
 	headerTintColor: 'white',
 	headerStyle: {
-		backgroundColor: 'tomato'
+		backgroundColor: '#49B9FB'
 	}
 };
 
@@ -72,7 +72,7 @@ const MainTab = createBottomTabNavigator(
 	},
 	{
 		tabBarOptions: {
-			activeTintColor: 'tomato',
+			activeTintColor: '#49B9FB',
 			inactiveTintColor: 'gray'
 		}
 	}

@@ -25,7 +25,7 @@ export default class Settings extends Component {
 		const params = navigation.state.params || {};
 
 		return {
-			title : '설정'
+			title: '설정'
 		};
 	};
 
@@ -35,7 +35,7 @@ export default class Settings extends Component {
 			case '프로필 수정':
 				this.props.navigation.push('EditProfile');
 				break;
-			case '관심 동물':
+			case '관심 기부':
 				this.props.navigation.push('Interests');
 				break;
 			case '나의 기부내역':
@@ -56,12 +56,12 @@ export default class Settings extends Component {
 				<SectionList
 					sections={[
 						{
-							title : '계정',
-							data  : [ '프로필 수정', '관심 동물', '나의 기부내역' ]
+							title: '계정',
+							data: ['프로필 수정', '관심 기부', '나의 기부내역']
 						},
 						{
-							title : '기타',
-							data  : [
+							title: '기타',
+							data: [
 								'Privacy Policy',
 								'Contact Us',
 								'About App',
@@ -94,22 +94,22 @@ export default class Settings extends Component {
 }
 
 const styles = StyleSheet.create({
-	container     : {
-		flex  : 1,
-		width : '100%'
+	container: {
+		flex: 1,
+		width: '100%'
 	},
-	item          : {
-		padding  : 10,
-		fontSize : 18,
-		height   : 44
+	item: {
+		padding: 10,
+		fontSize: 18,
+		height: 44
 	},
-	sectionHeader : {
-		paddingTop      : 2,
-		paddingLeft     : 10,
-		paddingRight    : 10,
-		paddingBottom   : 2,
-		fontSize        : 25,
-		fontWeight      : 'bold',
-		backgroundColor : 'rgba(247,247,247,1.0)'
+	sectionHeader: {
+		paddingTop: 2,
+		paddingLeft: 10,
+		paddingRight: 10,
+		paddingBottom: 2,
+		fontSize: 25,
+		fontWeight: 'bold',
+		backgroundColor: 'rgba(247,247,247,1.0)'
 	}
 });

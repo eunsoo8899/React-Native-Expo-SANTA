@@ -10,106 +10,55 @@ import {
 import UsageCell from '../components/UsageCell';
 import CancelButton from '../components/CancelButton'
 
-const mockDataSep = [
+const mockDataJan = [
 	{
-		purchasing : '예솔 동물병원',
-		date       : '(2019년 9월 27일)',
-		price      : '120,000원'
+		purchasing: '소방용품 지원',
+		date: '(2020년 1월 15일)',
+		price: '2,000,000원'
 	},
 	{
-		purchasing : '재우네 펫샾',
-		date       : '(2019년 9월 24일)',
-		price      : '70,000원'
+		purchasing: '야생동물 구호 물자',
+		date: '(2020년 1월 19일)',
+		price: '2,000,000원'
 	},
 	{
-		purchasing : '은수네 사료가게',
-		date       : '(2019년 9월 20일)',
-		price      : '150,000원'
+		purchasing: '토지 재건 비용 지원',
+		date: '(2020년 1월 20일)',
+		price: '1,000,000원'
 	},
 	{
-		purchasing : '경표 펫 SPA',
-		date       : '(2019년 9월 12일)',
-		price      : '100,000원'
+		purchasing: '자원봉사단 후원',
+		date: '(2020년 1월 20일)',
+		price: '1,000,000원'
 	},
 	{
-		purchasing : '직원 상여금',
-		date       : '(2019년 9월 10일)',
-		price      : '150,000원'
+		purchasing: '소방용품 지원',
+		date: '(2020년 1월 21일)',
+		price: '1,500,000원'
 	},
 	{
-		purchasing : '19번 케이지 수리',
-		date       : '(2019년 9월 4일)',
-		price      : '50,000원'
+		purchasing: '재단 운영비',
+		date: '(2020년 1월 25일)',
+		price: '2,500,000원'
 	}
 ];
 
-const mockDataAug = [
+const mockDataFeb = [
 	{
-		purchasing : '동물 세미나 참가비',
-		date       : '(2019년 8월 27일)',
-		price      : '80,000원'
+		purchasing: '예산 사용 미정',
+		date: '(2020년 2월)',
+		price: '9,000,000원'
 	},
-	{
-		purchasing : '월튼 철물점',
-		date       : '(2019년 8월 26일)',
-		price      : '96,000원'
-	},
-	{
-		purchasing : 'YeSOl PetShop',
-		date       : '(2019년 8월 16일)',
-		price      : '140,000원'
-	},
-	{
-		purchasing : '은하수 봉사센터',
-		date       : '(2019년 8월 11일)',
-		price      : '135,000원'
-	},
-	{
-		purchasing : '세미나 개최비용',
-		date       : '(2019년 8월 10일)',
-		price      : '100,000원'
-	},
-	{
-		purchasing : '변씨네 출장 수리점',
-		date       : '(2019년 8월 2일)',
-		price      : '32,000원'
-	}
 ];
 
-const mockDataJul = [
-	{
-		purchasing : "'애견백서' 도서 구입",
-		date       : '(2019년 7월 31일)',
-		price      : '17,000원'
-	},
-	{
-		purchasing : '에어컨 수리',
-		date       : '(2019년 7월 24일)',
-		price      : '62,000원'
-	},
-	{
-		purchasing : '탱이 장례비용',
-		date       : '(2019년 7월 14일)',
-		price      : '60,000원'
-	},
-	{
-		purchasing : '직원 회식비용',
-		date       : '(2019년 7월 12일)',
-		price      : '88,000원'
-	},
-	{
-		purchasing : '길고양이 중성화 수술',
-		date       : '(2019년 7월 9일)',
-		price      : '176,000원'
-	}
-];
+
 
 export default class DonationUsageScreen extends Component {
 	constructor(props) {
 		super(props);
 		this.state = {
-			refreshing : false,
-			comments   : [ mockDataSep, mockDataAug, mockDataJul ]
+			refreshing: false,
+			comments: [mockDataJan, mockDataFeb]
 		};
 	}
 
@@ -120,12 +69,12 @@ export default class DonationUsageScreen extends Component {
 			headerRight: <CancelButton onPress={() => navigation.navigate("Home")} />,
 			title: "기부금 사용 내역",
 			headerTitleStyle: {
-			  textAlign: "center",
-			  flex: 1,
-			  fontSize: 20
+				textAlign: "center",
+				flex: 1,
+				fontSize: 20
 			}
-		  };
 		};
+	};
 
 	renderItem = ({ item }) => {
 		return <UsageCell {...item} />;
@@ -136,29 +85,29 @@ export default class DonationUsageScreen extends Component {
 			<View style={{ flex: 1 }}>
 				<View
 					style={{
-						borderBottomColor : 'lightgray',
-						borderBottomWidth : 1
+						borderBottomColor: 'lightgray',
+						borderBottomWidth: 1
 					}}
 				>
 					<Image
 						style={styles.profile}
 						source={{
-							uri :
-								'https://images.mypetlife.co.kr/wp-content/uploads/2018/06/06200333/pexels-photo-1108099-1024x768.jpeg'
+							uri:
+								'http://www.santavision.net/images/user/logo-login.png'
 						}}
 					/>
 					<Text style={{ textAlign: 'center', fontSize: 25 }}>
-						경표 보호소
+						SANTA
 					</Text>
 					<Text
 						style={{
-							textAlign    : 'center',
-							fontSize     : 17,
-							color        : 'darkgray',
-							marginBottom : 18
+							textAlign: 'center',
+							fontSize: 17,
+							color: 'darkgray',
+							marginBottom: 18
 						}}
 					>
-						happyshelter@happy.com
+						thingkingbc@naver.com
 					</Text>
 				</View>
 				<View style={styles.container}>
@@ -166,87 +115,79 @@ export default class DonationUsageScreen extends Component {
 						<Text style={styles.contents}>총 기부 받은 금액</Text>
 					</View>
 					<View style={styles.right}>
-						<Text style={styles.contents}>1,689,200원</Text>
+						<Text style={styles.contents}>19,001,300원</Text>
 					</View>
 				</View>
 				<View style={styles.container}>
-					<Text style={styles.contents}>수용하는 동물 수</Text>
+					<Text style={styles.contents}>진행 중인 사업</Text>
 					<View style={styles.right}>
-						<Text style={styles.contents}>43 / 50마리</Text>
+						<Text style={styles.contents}>1 / 10</Text>
 					</View>
 				</View>
 				<View
 					style={{
-						borderBottomColor : 'lightgray',
-						borderBottomWidth : 1,
-						marginTop         : 18
+						borderBottomColor: 'lightgray',
+						borderBottomWidth: 1,
+						marginTop: 18
 					}}
 				/>
 				<ScrollView>
-					<Text style={styles.date}>2019년 9월</Text>
+					<Text style={styles.date}>2020년 01월</Text>
 					<FlatList
-						data={mockDataSep}
+						data={mockDataJan}
 						renderItem={this.renderItem}
 						onRefresh={this.refreshData}
 						refreshing={this.state.refreshing}
 						keyExtractor={(item, index) => index.toString()}
 					/>
-					<Text style={styles.date}>2019년 8월</Text>
+					<Text style={styles.date}>2020년 02월</Text>
 					<FlatList
-						data={mockDataAug}
+						data={mockDataFeb}
 						renderItem={this.renderItem}
 						onRefresh={this.refreshData}
 						refreshing={this.state.refreshing}
 						keyExtractor={(item, index) => index.toString()}
 					/>
-					<Text style={styles.date}>2019년 7월</Text>
-					<FlatList
-						style={styles.container2}
-						data={mockDataJul}
-						renderItem={this.renderItem}
-						onRefresh={this.refreshData}
-						refreshing={this.state.refreshing}
-						keyExtractor={(item, index) => index.toString()}
-					/>
+
 				</ScrollView>
 			</View>
 		);
 	}
 }
 const styles = StyleSheet.create({
-	container  : {
-		width          : '100%',
+	container: {
+		width: '100%',
 		// height: '100%',
-		flexDirection  : 'row',
-		alignItems     : 'center',
-		justifyContent : 'space-between',
-		padding        : 5,
-		marginTop      : 15
+		flexDirection: 'row',
+		alignItems: 'center',
+		justifyContent: 'space-between',
+		padding: 5,
+		marginTop: 15
 	},
-	profile    : {
-		width        : 120,
-		height       : 120,
-		borderRadius : 60,
-		marginTop    : 35,
-		marginBottom : 15,
-		margin       : 6,
-		alignSelf    : 'center'
+	profile: {
+		width: 120,
+		height: 120,
+		borderRadius: 60,
+		marginTop: 35,
+		marginBottom: 15,
+		margin: 6,
+		alignSelf: 'center'
 	},
-	contents   : {
-		paddingLeft : 15,
-		color       : 'tomato',
-		fontSize    : 23
+	contents: {
+		paddingLeft: 15,
+		color: '#49B9FB',
+		fontSize: 23
 	},
-	right      : {
-		paddingRight : 15,
-		marginLeft   : 'auto'
+	right: {
+		paddingRight: 15,
+		marginLeft: 'auto'
 	},
-	date       : {
-		textAlign    : 'center',
-		fontSize     : 17,
-		color        : 'lightgrey',
-		marginTop    : 12,
-		marginBottom : 5
+	date: {
+		textAlign: 'center',
+		fontSize: 17,
+		color: 'lightgrey',
+		marginTop: 12,
+		marginBottom: 5
 	},
-	scrollView : {}
+	scrollView: {}
 });

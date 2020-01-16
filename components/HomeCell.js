@@ -86,7 +86,7 @@ class HomeCell extends Component {
 						<FontAwesome
 							name={'share'}
 							size={25}
-							color={'tomato'}
+							color={'#49B9FB'}
 						/>
 					</TouchableOpacity>
 				</View>
@@ -119,7 +119,7 @@ class HomeCell extends Component {
 						<Ionicons
 							name={'ios-heart-empty'}
 							size={25}
-							color={'tomato'}
+							color={'#49B9FB'}
 							style={{ paddingLeft: 10 }}
 						/>
 						<Text style={styles.itemText}>
@@ -127,7 +127,7 @@ class HomeCell extends Component {
 						</Text>
 					</TouchableOpacity>
 					<TouchableOpacity style={styles.iconsTexts}>
-						<Ionicons name={'ios-star-outline'} size={25} color={'tomato'} />
+						<Ionicons name={'ios-star-outline'} size={25} color={'#49B9FB'} />
 						<Text style={styles.itemText}>
 							{this.props.interests} 관심
 						</Text>
@@ -136,7 +136,7 @@ class HomeCell extends Component {
 						<MaterialCommunityIcons
 							name={'comment-outline'}
 							size={25}
-							color={'tomato'}
+							color={'#49B9FB'}
 						/>
 						<Text style={styles.itemText}>
 							{this.props.comments} 댓글

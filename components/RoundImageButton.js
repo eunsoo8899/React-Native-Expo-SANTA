@@ -5,7 +5,7 @@ import { Ionicons } from '@expo/vector-icons';
 
 export default class RoundImageButton extends Component {
 	static defaultProps = {
-		name : ''
+		name: ''
 	};
 
 	constructor(props) {
@@ -18,7 +18,7 @@ export default class RoundImageButton extends Component {
 			<TouchableOpacity>
 				<Ionicons
 					name={this.props.iconName}
-					color={'#F75356'}
+					color={'#254BCC'}
 					style={styles.roundimage}
 				/>
 			</TouchableOpacity>
@@ -27,16 +27,16 @@ export default class RoundImageButton extends Component {
 }
 
 const styles = StyleSheet.create({
-	roundimage : {
-		width           : 35,
-		backgroundColor : '#a1a1',
-		height          : 35,
-		marginLeft      : 10,
-		marginRight     : 10,
-		borderRadius    : 25,
-		alignItems      : 'center',
-		paddingLeft     : 12,
-		paddingTop      : 7,
-		fontSize        : 18
+	roundimage: {
+		width: 35,
+		backgroundColor: '#49B9FB',
+		height: 35,
+		marginLeft: 10,
+		marginRight: 10,
+		borderRadius: 25,
+		alignItems: 'center',
+		paddingLeft: 12,
+		paddingTop: 7,
+		fontSize: 18
 	}
 });

@@ -81,7 +81,7 @@ export default class PostingScreen extends Component {
 							<Text
 								style={{
 									fontSize: 20,
-									color: 'red',
+									color: 'white',
 									textAlign: 'center',
 									marginTop: 20,
 									marginBottom: 35
@@ -93,7 +93,7 @@ export default class PostingScreen extends Component {
 								<Ionicons
 									name={'ios-add-circle'}
 									size={80}
-									color="red"
+									color="white"
 									style={{ textAlign: 'center' }}
 								/>
 								<Modal isVisible={this.state.isModalVisible}>
@@ -101,7 +101,7 @@ export default class PostingScreen extends Component {
 										<Button
 											title="취소 하기"
 											onPress={this.toggleModal}
-											color="tomato"
+											color="#49B9FB"
 										/>
 										<View style={styles.buttonArray}>
 											<TouchableOpacity
@@ -111,7 +111,7 @@ export default class PostingScreen extends Component {
 													onPress={this.getPicture}
 													name={'ios-images'}
 													size={80}
-													color={'tomato'}
+													color={'#49B9FB'}
 												/>
 												<Text
 													style={{
@@ -131,7 +131,7 @@ export default class PostingScreen extends Component {
 													onPress={this.snapPicture}
 													name={'ios-camera'}
 													size={110}
-													color={'tomato'}
+													color={'#49B9FB'}
 												/>
 												<Text style={{ fontSize: 25 }}>
 													사진 찍기
@@ -190,7 +190,7 @@ export default class PostingScreen extends Component {
 const styles = StyleSheet.create({
 	postingBox: {
 		height: 220,
-		backgroundColor: 'mistyrose'
+		backgroundColor: '#49B9FB'
 	},
 	name: {
 		paddingLeft: 10

@@ -16,17 +16,17 @@ export default class EditProfileScreen extends Component {
 		return (
 			<KeyboardAvoidingView
 				style={{
-					flex           : 1,
-					flexDirection  : 'column',
-					justifyContent : 'center'
+					flex: 1,
+					flexDirection: 'column',
+					justifyContent: 'center'
 				}}
 				behavior="padding"
 			>
 				<Image
 					style={styles.profile}
 					source={{
-						uri :
-							'https://images.mypetlife.co.kr/wp-content/uploads/2018/06/06200333/pexels-photo-1108099-1024x768.jpeg'
+						uri:
+							'http://www.santavision.net/images/user/logo-login.png'
 					}}
 				/>
 
@@ -64,19 +64,19 @@ export default class EditProfileScreen extends Component {
 }
 
 const styles = StyleSheet.create({
-	profile : {
-		width        : 120,
-		height       : 120,
-		borderRadius : 60,
-		marginTop    : 35,
-		marginBottom : 15,
-		margin       : 6,
-		alignSelf    : 'center'
+	profile: {
+		width: 120,
+		height: 120,
+		borderRadius: 60,
+		marginTop: 35,
+		marginBottom: 15,
+		margin: 6,
+		alignSelf: 'center'
 	},
-	inputs  : {
-		width      : '100%',
-		height     : '80%',
-		padding    : 20,
-		alignItems : 'center'
+	inputs: {
+		width: '100%',
+		height: '80%',
+		padding: 20,
+		alignItems: 'center'
 	}
 });

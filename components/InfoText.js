@@ -30,12 +30,12 @@ const styles = StyleSheet.create({
         margin: 10
     },
     title: {
-        color: "#F75356",
+        color: "#49B9FB",
         fontSize: 20
     },
     content: {
         marginLeft: 'auto',
-        color: "#F75356",
+        color: "#49B9FB",
         fontSize: 20,
 
 

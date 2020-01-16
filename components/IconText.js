@@ -24,7 +24,7 @@ export default class IconText extends Component {
                     <Ionicons
                         name={this.props.iconName}
                         size={20}
-                        color={"#F75356"}
+                        color={"#49B9FB"}
                         style={styles.iconstyle}
                     />
                     <Text
@@ -44,7 +44,7 @@ export default class IconText extends Component {
                     <MaterialCommunityIcons
                         name={this.props.iconName}
                         size={20}
-                        color={"#F75356"}
+                        color={"#49B9FB"}
                         style={styles.iconstyle}
                     />
                     <Text

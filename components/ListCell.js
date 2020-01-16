@@ -5,8 +5,8 @@ import RoundImageButton from './RoundImageButton';
 
 export default class ListCell extends Component {
 	static defaultProps = {
-		name  : 'null',
-		image : 'null'
+		name: 'null',
+		image: 'null'
 	};
 
 	constructor(props) {
@@ -24,11 +24,11 @@ export default class ListCell extends Component {
 				<View style={styles.buttons}>
 					<RoundImageButton
 						iconName={'ios-create'}
-						color={'#F75356'}
+						color={'#49B9FB'}
 					/>
 					<RoundImageButton
 						iconName={'ios-trash'}
-						color={'#F75356'}
+						color={'#49B9FB'}
 					/>
 				</View>
 			</View>
@@ -37,19 +37,19 @@ export default class ListCell extends Component {
 }
 
 const styles = StyleSheet.create({
-	container : {
-		width         : '100%',
-		flexDirection : 'row',
-		padding       : 10,
-		alignItems    : 'center'
+	container: {
+		width: '100%',
+		flexDirection: 'row',
+		padding: 10,
+		alignItems: 'center'
 	},
-	name      : {
-		fontWeight : 'bold',
-		marginLeft : 10
+	name: {
+		fontWeight: 'bold',
+		marginLeft: 10
 	},
-	buttons   : {
-		marginLeft    : 'auto',
-		height        : 50,
-		flexDirection : 'row'
+	buttons: {
+		marginLeft: 'auto',
+		height: 50,
+		flexDirection: 'row'
 	}
 });

@@ -64,7 +64,7 @@ export default class LoginScreen extends Component {
 							height: 300,
 							resizeMode: 'contain'
 						}}
-						source={require('../assets/images/Logo.png')}
+						source={require('../assets/images/SantaLogo.png')}
 					/>
 					<IconTextInput
 						style={{ marginTop: 10 }}
@@ -80,9 +80,9 @@ export default class LoginScreen extends Component {
 					/>
 					<LoginButton
 						style={{ marginTop: 10 }}
-						title={'PawChain 로그인'}
+						title={'SANTA 로그인'}
 						onPress={() => {
-							console.log('PawChain 로그인 pressed');
+							console.log('SANTA 로그인 pressed');
 							this.submitLogin(
 								this.state.emailInput,
 								this.state.nameInput
@@ -90,9 +90,9 @@ export default class LoginScreen extends Component {
 						}}
 					/>
 					<View style={styles.registerButton}>
-						<Text style={styles.buttonPadding}>아직 PawChain 회원이 아니신가요?</Text>
+						<Text style={styles.buttonPadding}>아직 SANTA 회원이 아니신가요?</Text>
 						<TouchableOpacity onPress={() => this.props.navigation.navigate('Register')}>
-							<Text style={{ color: 'tomato', fontWeight: 'bold' }}>회원가입</Text>
+							<Text style={{ color: '#49B9FB', fontWeight: 'bold' }}>회원가입</Text>
 						</TouchableOpacity>
 					</View>
 				</View>
@@ -104,7 +104,7 @@ export default class LoginScreen extends Component {
 const styles = StyleSheet.create({
 	title: {
 		fontSize: 30,
-		color: 'tomato',
+		color: '#49B9FB',
 		marginTop: -20,
 		fontWeight: '400'
 	},

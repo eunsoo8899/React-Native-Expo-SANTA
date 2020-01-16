@@ -5,9 +5,9 @@ import { Ionicons } from '@expo/vector-icons';
 
 export default class LoginButton extends Component {
 	static defaultProps = {
-		title   : 'Button',
-		onPress : () => {},
-		color   : 'white'
+		title: 'Button',
+		onPress: () => { },
+		color: 'white'
 	};
 
 	constructor(props) {
@@ -18,7 +18,7 @@ export default class LoginButton extends Component {
 	render() {
 		return (
 			<TouchableOpacity
-				style={[ styles.touchWrap, this.props.style ]}
+				style={[styles.touchWrap, this.props.style]}
 				onPress={this.props.onPress}
 			>
 				<View style={styles.container}>
@@ -38,21 +38,21 @@ export default class LoginButton extends Component {
 }
 
 const styles = StyleSheet.create({
-	touchWrap : {
-		flexDirection : 'row',
-		height        : 50
+	touchWrap: {
+		flexDirection: 'row',
+		height: 50
 	},
-	container : {
-		flexGrow        : 1,
-		flexDirection   : 'row',
-		alignItems      : 'center',
-		borderColor     : '#aaa',
-		backgroundColor : 'tomato',
-		justifyContent  : 'center',
-		borderRadius    : 5
+	container: {
+		flexGrow: 1,
+		flexDirection: 'row',
+		alignItems: 'center',
+		borderColor: '#aaa',
+		backgroundColor: '#49B9FB',
+		justifyContent: 'center',
+		borderRadius: 5
 	},
-	title     : {
-		color    : '#fff',
-		fontSize : 20
+	title: {
+		color: '#fff',
+		fontSize: 20
 	}
 });
